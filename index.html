@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .header {
+            background-color:#86509c;
+        }
+
+        #menu {
+            display: inline-block
+        }
+
+        #menuitems {
+            display: inline-block;
+            color: white;
+        }
+
+        .headertext {
+            color: white;
+            padding-top: 50px;
+        }
+
+        #serviceheading {
+            color: white;
+        }
+
+        .services {
+            padding-top:50px;
+            padding-bottom: 50px;
+            background-color: #17c2a4;
+        }
+
+        #servicetext {
+            color: white;
+            padding: 30px;
+        }
+
+        .serviceprovided {
+            display: inline-block;
+            margin-left: 70px;
+        }
+
+        #servicesubheading {
+            color: white;
+            
+        }
+
+        .team {
+            background-color: #e7f1f8;
+        }
+
+        #teamheading {
+            color: #3c4761;
+            padding-top: 50px;
+        }
+
+        #teamtext {
+            color: #5e697f;
+            padding-top: 30px;
+        }
+
+        #teampics {
+            display: inline-block;
+            padding-bottom:50px;
+        }
+
+        .skills {
+            background-color: #ffffff;
+            padding-bottom:50px;
+        }
+
+        #skillsheading {
+            color: #3c4761;
+            padding-top: 50px;
+        }
+
+        #skillstext {
+            color: #3c4761;
+            padding-top: 30px;
+        }
+
+        #skillsprog {
+            display: inline-block;
+            padding-left: 50px;
+            padding-bottom:50px;
+        }
+
+        .portfolio {
+            background-color: #ffdd99;
+        }
+
+        #portfolioheading {
+            color: #393939;
+            padding-top: 50px;
+        }
+
+        #portfoliotext {
+            color: #393939;
+            padding-top: 30px;
+        }
+
+        #portfoliopics {
+            display: inline-block;
+        }
+        .feedback{
+            background-color:#d74680;
+            padding-bottom: 200px;
+        }
+        #feedbackheading{
+            color:white;
+            padding-top:50px;
+        }
+        #feedbacktext{
+            color:white;
+            padding-top:30px;
+        }
+        .group{
+            zoom:1;
+        }
+        .section{
+            clear:both;
+            padding:0;
+            margin:0;
+        }
+        .feedbackimage{
+            margin-left:0px;
+            display:block;
+            
+        }
+        #feedbacksubheading{
+            color:white;
+        }
+        .image1{
+            display:block;
+            float:left;
+        }
+        .image1text{
+            display:block;
+            float:left;
+            padding-left:10px;
+        }
+        .image2{
+            display:block;
+            float:left;
+            margin-left:400px;
+        }
+        .image1text2{
+            display:block;
+            float:right;
+            padding-left:10px;
+        }
+        .section2{
+            margin-top:5em;
+        }
+        .image4{
+            display:block;
+            float:left;
+            margin-left:440px;
+        }
+        .contact{
+          padding-top:50px;
+          padding-bottom:50px;
+          background-color:#3c5499;  
+        }
+        #contactheading{
+            text-align: center;
+            color:white;
+        }
+        #contacttext{
+            text-align: center;
+            color:white;
+            padding-top:30px;
+        }
+        .progress {
+  width: 150px;
+  height: 150px !important;
+  float: left; 
+  line-height: 100px;
+  background: none;
+  margin: 15px;
+  box-shadow: none;
+  position: relative;
+}
+.progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 12px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.progress>span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.progress .progress-left {
+  left: 0;
+}
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 12px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+.progress .progress-right {
+  right: 0;
+}
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: #000;
+  font-size: 24px;
+  color: #fff;
+  line-height: 135px;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.progress.blue .progress-bar {
+  border-color: #049dff;
+}
+.progress.blue .progress-left .progress-bar {
+  animation: loading-2 1.5s linear forwards 1.8s;
+}
+.progress.yellow .progress-bar {
+  border-color: #fdba04;
+}
+.progress.green .progress-bar {
+  border-color: green;
+}
+.progress.green .progress-right .progress-bar {
+  animation: loading-3 1.8s linear forwards;
+}
+.progress.green .progress-left .progress-bar {
+  animation: none;
+}
+.progress.pink .progress-bar {
+  border-color:pink;
+}
+.progress.pink .progress-right .progress-bar {
+  animation: loading-3 1.8s linear forwards;
+}
+.progress.pink .progress-left .progress-bar {
+  animation: none;
+}
+.progress.yellow .progress-right .progress-bar {
+  animation: loading-3 1.8s linear forwards;
+}
+.progress.yellow .progress-left .progress-bar {
+  animation: none;
+}
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg);
+  }
+}
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+}
+    </style>
+    <title>Day 6</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <header class="header">
+        <nav class="navbar ">
+            <div class="container">
+                <div class="row">
+                <div class="col-1 justify-content-start">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.jpg" alt="">
+                </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                <ul class="nav justify-content-center">
+                    <li>
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Work</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            
+        </nav>
+        <div class="row">
+        <div class="col-12" align="center">
+        <h2 class="headertext" align="center">Hi there! We are the new kids on the block <br>and we build awesome
+            websites and apps</h2>
+        <div class="d-grid gap-2 col-2 mx-auto">
+            <button class="btn btn-warning btn-lg" type="button" style="margin-top:30px;margin-bottom:30px;">WORK WITH
+                US!</button>
+        </div>
+        </div>
+    </div>
+    </header>
+    <div class="container-fluid services">
+        <div class="container">
+        <div class="row">
+         <div class="col-12" align="center">
+        <h2 id="serviceheading" align="center">SERVICES WE PROVIDE</h2>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12" align="center">
+        <p id="servicetext" align="center">We are working with both individuals and businesses all over the globe<br> to
+            create awesome websites and applications</p>
+        </div>
+    </div>
+    <div class="container">
+            <div class="row justify-content-md-center align-items-center">
+            <div class="col-lg-3 col-md-6 col-sm-center-12">
+                <img src="flag.jpg">
+                <h4 id="servicesubheading">Branding</h4>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-center-12">
+                <img src="pencil.jpg">
+                <h4 id="servicesubheading">Design</h4>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-center-12">
+                <img src="screws.jpg">
+                <h4 id="servicesubheading">Development</h4>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-center-12">
+                <img src="rocket.jpg">
+                <h4 id="servicesubheading">Rocket Science</h4>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="container-fluid team">
+        <h2 id="teamheading" align="center">MEET OUR BEAUTIFUL TEAM</h2>
+        <p id="teamtext" align="center">We are a small team of designers and developers, who help brands with big ideas
+        </p>
+        <div class="container">
+            <div class="row justify-content-center align-items-center align-self-sm-center">
+                <div class="col-lg-3 col-md-6 col-sm-center-12">
+            <img src="team1.jpg">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-center-12">
+                <img src="Team2.jpg">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-center-12">
+                <img src="team3.jpg">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-center-12">
+                <img src="team4.jpg">
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid skills">
+        <div class="container">
+        <h2 id="skillsheading" align="center">WE GOT SKILLS!</h2>
+        <p align="center" id="skillstext">We are a small team of designers and developers, who help brands with big
+            ideas</p>
+            <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="progress blue">
+                    <span class="progress-left">
+                                      <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                                      <span class="progress-bar"></span>
+                    </span>
+                    <div class="progress-value">90%</div>
+                  </div>
+                  <div class="col-lg-12">
+                
+                  <h4>WEBSITE DESIGN</h4>
+                </div>
+
+                </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="progress pink">
+                    <span class="progress-left">
+                                      <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                                      <span class="progress-bar"></span>
+                    </span>
+                    <div class="progress-value">75%</div>
+                </div>
+                <div class="col-lg-12">
+                <h4>HTML/CSS</h4>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 justify-content-center">
+                <div class="progress green">
+                    <span class="progress-left">
+                                      <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                                      <span class="progress-bar"></span>
+                    </span>
+                    <div class="progress-value">70%</div>
+                  </div>
+                  <div class="col-lg-12">
+                  <h4>GRAPHIC DESIGN</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="progress yellow">
+                    <span class="progress-left">
+                                      <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                                      <span class="progress-bar"></span>
+                    </span>
+                    <div class="progress-value">85%</div>
+                  </div>
+                  <br>
+                  <div class="col-lg-12">
+                  <h4>UINTERFACE/UEXPERIENCE</h4>
+                </div>
+                </div>
+        </div>
+        </div>
+    </div>
+    <div class="container-fluid  portfolio">
+        <h2 id="portfolioheading" align="center">OUR PORTFOLIO</h2>
+        <p id="portfoliotext" align="center">We are a small team of designers and developers, who help brands with big
+            ideas</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <button class="btn btn-outline-secondary me-md-2 active" type="button">All</button>
+            <button class="btn btn-outline-secondary" type="button">Web</button>
+            <button class="btn btn-outline-secondary me-md-2" type="button">Apps</button>
+            <button class="btn btn-outline-secondary" type="button">Icons</button>
+        </div>
+        <div class="container">
+            <div id="portfoliopics">
+                <img src="p1.jpg" width="500px">
+                <p id="portfoliotext" align="center">ISOMETRIC PERPECTIVE MOCK-UP</p>
+            </div>
+            <div id="portfoliopics">
+                <img src="p2.jpg" width="500px">
+                <p id="portfoliotext" align="center">TIME ZONE APP UI</p>
+            </div>
+        </div>
+        <div class="container">
+            <div id="portfoliopics">
+                <img src="p3.jpg" width="500px">
+                <p id="portfoliotext" align="center">VIRO MEDIA PLAYERS UI</p>
+            </div>
+            <div id="portfoliopics">
+                <img src="p4.jpg" width="500px">
+                <p id="portfoliotext" align="center">BLOG/MAGAZINE FLAT UI KIT</p>
+            </div>
+        </div>
+        <div class="d-grid gap-2 col-2 mx-auto" style="padding-bottom:50px;padding-top:30px;">
+            <button class="btn btn-success" type="button">LOAD MORE PROJECTS</button>
+        </div>
+    </div>
+    <div class="container-fluid feedback">
+        <h2 id="feedbackheading"align="center">WHAT PEOPLE SAY ABOUT US</h2>
+        <p id="feedbacktext"align="center">OUR CLIENTS LOVE US</p>
+        <div class="container">
+            <div class="row"style="padding-top:40px;">
+                <div class="col-lg-2 col-md-12 col-sm-12">
+                    <img src="f1.jpg">
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <p style="color:white;">“Nullam dapibus blandit orci,<br> 
+                        viverra gravida dui lobortis eget.<br> 
+                        Maecenas fringilla urna eu nisl scelerisque.”</p>
+                    <h3 style="color:white;">Chanel Iman</h3>
+                    <h5 style="color:#ffdd99;">CEO of Pinterest</h5>
+                </div>
+            
+                <div class="col-lg-2 col-md-12 col-sm-12">
+                    <img src="f2.jpg">
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <p style="color:white;">“Nullam dapibus blandit orci,<br> 
+                        viverra gravida dui lobortis eget.<br> 
+                        Maecenas fringilla urna eu nisl scelerisque.”</p>
+                    <h3 style="color:white;">Adriana Lima</h3>
+                    <h5 style="color:#ffdd99;">Founder of Instagram</h5>
+                </div>
+        </div>
+         <div class="row "style="padding-top:40px;">
+            <div class="col-lg-2 col-md-12 col-sm-12">
+                <img src="f3.jpg">
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <p style="color:white;">“Vivamus luctus urna sed urna ultricies <br>ac tempor dui sagittis<br>. In condimentum facilisis porta.”</p>
+                <h3 style="color:white;">ANNE HATHWAY</h3>
+                <h5 style="color:#ffdd99;">Lead Designer At Behance</h5>
+            </div>  
+            <div class="col-lg-2 col-md-12 col-sm-12">
+                <img src="f4.jpg">
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <p style="color:white;">“Phasellus non purus vel arcu <br>tempor commodo.<br> Fusce semper, purus vel luctus molestie,<br> risus sem cursus neque.”</p>
+                <h3 style="color:white;">EMMA STONE</h3>
+                <h5 style="color:#ffdd99;">Co-Founder of Shazam</h5>
+            </div>
+         </div>  
+        </div> 
+    </div>
+    <div class="contact container-fluid">
+        <h2 id="contactheading">GET IN TOUCH</h2>
+        <p id="contacttext">1600 Pensylvanie Ave NW,Washington,DC 20500,United States Of America. Tel:(202) 456 1111</p>
+        <div class="container">
+        <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Your Name*" aria-label="Your Name*">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Your Email*" aria-label="Your Email">
+            </div>
+          </div>
+        </div>
+        <div class="container "style="padding-top:20px;">
+        <div class="mb-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"placeholder="Your Message*" aria-label="Your Message"></textarea>
+          </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-12"align="center">
+        <button class="btn btn-primary">SEND MESSAGE</button>
+    </div>
+        </div>
+    </div>
+</body>
+
+</html>
